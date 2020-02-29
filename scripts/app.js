@@ -1,1 +1,1 @@
-getEventsData()
+getEvents()
