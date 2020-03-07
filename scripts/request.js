@@ -18,7 +18,7 @@ const jsonImg = 'event.images.images[0]transforms.transforms[2].url';
 const getEvents = (genreID = 6, genreName = 'All gigs', offset = 0) => {
     const username = 'aucklandgigs';
     const password = '7fgrzf2gvz3j';
-    const url = `http://api.eventfinda.co.nz/v2/events.json?location=28&category=${genreID}&rows=10&offset=${offset}`;
+    const url = `https://cors-anywhere.herokuapp.com/http://api.eventfinda.co.nz/v2/events.json?location=28&category=${genreID}&rows=10&offset=${offset}`;
 
     const request = new XMLHttpRequest();
 
@@ -139,5 +139,3 @@ const setPageLink = () => {
         })
     })
 }
-
-getEvents()
